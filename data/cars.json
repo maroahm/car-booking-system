@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "brand": "Honda",
+        "model": "Civic",
+        "year": "2019",
+        "transmission": "Manual",
+        "fuel_type": "Petrol",
+        "passengers": "5",
+        "daily_price_huf": "16250",
+        "image": "uploads\/2019_honda_civic_sedan_touring_fq_oem_1_815.avif"
+    },
+    {
+        "id": 2,
+        "brand": "Honda",
+        "model": "Civic",
+        "year": 2019,
+        "transmission": "Manual",
+        "fuel_type": "Petrol",
+        "passengers": 5,
+        "daily_price_huf": 16250,
+        "image": "https:\/\/media.ed.edmunds-media.com\/honda\/civic\/2019\/oem\/2019_honda_civic_sedan_touring_fq_oem_1_815.jpg"
+    },
+    {
+        "id": 3,
+        "brand": "dsad",
+        "model": "2",
+        "year": "2002",
+        "transmission": "23412",
+        "fuel_type": "Manual",
+        "passengers": "3",
+        "daily_price_huf": "13214",
+        "image": "uploads\/lights-car-vehicle-244206.jpg"
+    }
+]

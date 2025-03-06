@@ -1,0 +1,188 @@
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    background-color: gray;
+    color: aliceblue;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.homeButton{
+    border: gray;
+    background-color: gray;
+    font-size: large;
+    font-weight: bold;
+    &:hover{
+        color: white;
+    }
+}
+
+.registration-buttons{
+    margin-right: 10px;
+}
+
+.registration-buttons button{
+    background-color: grey;
+    border-radius: 7px;
+}
+
+.login-buttons-container{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.filter-cars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px; 
+    padding: 20px;
+    background-color:transparent; 
+    border-radius: 10px;
+}
+
+.seats-div,
+.filter-cars div {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+
+.seats-div button,
+.filter-cars input[type="text"],
+.filter-cars input[type="date"],
+.filter-cars select {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px 10px;
+    min-width: 50px; 
+    text-align: center;
+}
+
+.seats-div button:hover,
+.filter-cars button:hover {
+    border-color: #fff; 
+}
+
+.counter-container {
+    font-size: 1em;
+    font-weight: bold;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 5px 10px;
+    min-width: 30px; 
+    text-align: center;
+    background-color: transparent;
+}
+
+.admin-car-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    color: #000000; 
+}
+
+.filter-cars p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.filter-cars select {
+    min-width: 120px;
+    background-color: #000 ;
+}
+
+.filter-cars .filter-button {
+    background-color: #f5c518;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.filter-cars .filter-button:hover {
+    background-color: #e0b313; 
+}
+
+@media (max-width: 768px) {
+    .filter-cars {
+        flex-wrap: wrap; 
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .seats-div,
+    .filter-cars div {
+        justify-content: center;
+    }
+}
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.car-item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.car-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.car-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.car-item p {
+    margin: 5px 0;
+}
+
+.car-item a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #ffd700;
+    color: #1e1e1e;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.car-item a:hover {
+    background-color: #ffcc33;
+}
+
+.user-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.user-options{
+    a:hover{
+        color: white;
+    }
+}
