@@ -11,8 +11,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
             $_SESSION['admin'] = true;
             header('Location: admin/index.php');
             exit;
-        } else {
-            $errors['login'] = 'Invalid credentials.';
         }
     
     
@@ -28,7 +26,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
     if(empty($errors))
     {
         $email = $_POST['emailAdress'];
-        $password = $_POST['password'];
+        $password =$_POST['password'];
         
         $file = new JsonIO('data/user.json');
         $userData = $file->loadUser($email);
@@ -66,13 +64,13 @@ if($_SERVER['REQUEST_METHOD'] === 'POST')
         <h1>Login</h1>
         
         <p>Email address</p>
-        <input type="text" name="emailAdress" id="emailAdress" class="email-adress">
+        <input type="text" name="emailAdress" id="emailAdress" class="email-adress" placeholder="enter your email">
         <?php if(isset($errors['emailAdress'])):?>
             <div style="color: red;"><?php echo $errors['emailAdress']; ?></div>
         <?php endif; ?>
         
         <p>Password</p>
-        <input type="text" name="password" id="password">
+        <input type="password" name="password" id="password" placeholder="enter your password">
         <?php if(isset($errors['password'])):?>
             <div style="color: red;"><?php echo $errors['password']; ?></div>
         <?php endif; ?>

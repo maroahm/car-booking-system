@@ -16,14 +16,24 @@ abstract class FileIO implements IFileIO {
 class JsonIO extends FileIO {
   public function load($assoc = true) {
     $file_content = file_get_contents($this->filepath);
-    return json_decode($file_content, $assoc) ?: [];
+    $data = json_decode($file_content, $assoc);
+    
+    if (!is_array($data)) {
+        return []; 
+    }
+
+    return $data;
   }
 
   public function loadUser($email){
     $data = $this->load(true);
     
+    if (!is_array($data)) {
+      return null;
+    }
+
     foreach($data as $user){
-      if($user['email']==$email)
+      if(isset($user['email']) && $user['email'] === $email)
       {
         return $user;
       }
@@ -42,7 +52,15 @@ class JsonIO extends FileIO {
   }
 
   public function save($data) {
-    $json_content = json_encode($data, JSON_PRETTY_PRINT);
+    $existingData = $this->load(true);
+
+    if (!is_array($existingData)) {
+        $existingData = []; 
+    }
+
+    $existingData[] = $data; 
+
+    $json_content = json_encode($existingData, JSON_PRETTY_PRINT);
     file_put_contents($this->filepath, $json_content);
 }
 }

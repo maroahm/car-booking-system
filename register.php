@@ -70,28 +70,28 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     <form action="" method="post">
         <div class="full-name">
             <p>Full Name</p>
-            <input type="text" name="fullName" id="fullName">
+            <input type="text" name="fullName" id="fullName" placeholder="enter your name">
             <?php if(isset($errors['fullName'])):?>
                 <div style="color: red;"><?php echo $errors['fullName']; ?></div>
             <?php endif; ?>
         </div>
         <div class="email-adress">
             <p>Email address</p>
-            <input type="text" name="emailAdress" id="emailAdress" class="email-adress">
+            <input type="text" name="emailAdress" id="emailAdress" class="email-adress" placeholder="enter your email address">
             <?php if(isset($errors['emailAdress'])):?>
                 <div style="color: red;"><?php echo $errors['emailAdress']; ?></div>
             <?php endif; ?>
         </div>
         <div class="password">
             <p>Password</p>
-            <input type="text" name="password" id="password">
+            <input type="password" name="password" id="password" placeholder="enter your password">
             <?php if(isset($errors['password'])):?>
                 <div style="color: red;"><?php echo $errors['password']; ?></div>
             <?php endif; ?>
         </div>
         <div class="re-password">
             <p>Re-enter your Password</p>
-            <input type="text" name="rePassword" id="rePassword">
+            <input type="password" name="rePassword" id="rePassword" placeholder="renter your password">  
             <?php if(isset($errors['rePassword'])):?>
                 <div style="color: red;"><?php echo $errors['rePassword']; ?></div>
             <?php endif; ?>
