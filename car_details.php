@@ -47,15 +47,15 @@ if (!$car) {
                 </div>
             <?php else: ?>
                 <div class="user-icon">
-                    <img src="userIcon.png" alt="userIcon">
+                    <img src="images/userIcon.png" alt="userIcon">
                 </div>
                 <div class="user-options">
-        <a href="profile.php">My Reservations</a>
-        <a href="logout.php">Logout</a>
-        <?php if (isset($_SESSION['admin'])): ?>
-            <a href="admin/index.php">Admin Panel</a>
-        <?php endif; ?>
-    </div>
+                    <button onclick = "window.location.href = 'profile.php'">My Reservations</button>
+                    <button onclick = "window.location.href = 'logout.php'">Logout</button>
+                    <?php if (isset($_SESSION['admin'])): ?>
+                        <a href="admin/index.php">Admin Panel</a>
+                    <?php endif; ?>
+                </div>
             <?php endif; ?>
         </div>
     </nav>
@@ -72,7 +72,7 @@ if (!$car) {
 
 
         <?php if ($loggedIn): ?>
-    <a href="book_car.php?car_id=<?= htmlspecialchars($car['id']) ?>">Book Now</a>
+    <button onclick = "window.location.href = 'book_car.php?car_id=<?= htmlspecialchars($car['id']) ?>'">Book Now</button>
 <?php else: ?>
     <p>Please <a href="login.php">login</a> to book this car.</p>
 <?php endif; ?>

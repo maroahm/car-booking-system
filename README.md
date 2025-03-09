@@ -40,11 +40,14 @@ This PHP-based web application allows users to browse and book rental cars. It u
 4. Start the server and navigate to `http://localhost/car-booking/`.
 
 ## Usage Guide
-
+![HomePage](images/screenshots/Home_page.png)
 ### Register & Login
 1. Navigate to the registration page.
+![Registeration page](images/screenshots/register.png)
 2. Provide full name, email, and password.
+![Register](images/screenshots/registration.png)
 3. Log in with your registered credentials.
+![Login](images/screenshots/Login_with_registered_account.png)
 
 ### Booking a Car
 1. Browse available cars on the homepage.

@@ -27,8 +27,8 @@ $loggedIn = isset($_SESSION['user']);
                     <img src="userIcon.png" alt="userIcon">
                 </div>
                 <div class="user-options">
-                    <a href="profile.php">My Reservations</a>
-                    <a href="logout.php">Logout</a>
+                    <button onclick = "window.location.href = 'profile.php'">My Reservations</button>
+                    <button onclick = "window.location.href = 'logout.php'">Logout</button>
                 </div>
             <?php endif; ?>
         </div>

@@ -14,8 +14,9 @@ if (!$carId) {
     die("Car ID is missing.");
 }
 
-$carFile = new JsonIO('data/cars.json');
-$car = $carFile->loadOne(['id' => intval($carId)]); 
+$carStorage = new Storage(new JsonIO('data/cars.json'));
+$car = $carStorage->findOne(["id" => intval($carId)]); 
+
 
 if (!$car) {
     die("Car not found.");
@@ -40,8 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         if (empty($errors)) {
-            $bookingFile = new JsonIO('data/bookings.json');
-            $bookings = $bookingFile->load(true);
+            $bookingFile = new Storage(new JsonIO('data/bookings.json'));
+            $bookings = $bookingFile->findAll();
             $isBooked = false;
             foreach ($bookings as $booking) {
                 if ($booking['car_id'] == $carId) {
@@ -66,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     'start_date' => $startDate,
                     'end_date' => $endDate,
                 ];
-                $bookingFile->save($newBooking);
+                $bookingFile->add($newBooking);
                 header("Location: booking_success.php?car_id=" . urlencode($carId));
                 exit;
             }
@@ -96,11 +97,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             <?php else: ?>
                 <div class="user-icon">
-                    <img src="userIcon.png" alt="userIcon">
+                    <img src="images/userIcon.png" alt="userIcon">
                 </div>
                 <div class="user-options">
-                    <a href="profile.php">My Reservations</a>
-                    <a href="logout.php">Logout</a>
+                    <button onclick = "window.location.href = 'profile.php'">My Reservations</button>
+                    <button onclick = "window.location.href = 'logout.php'">Logout</button>
                 </div>
             <?php endif; ?>
         </div>
