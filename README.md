@@ -75,8 +75,8 @@ This PHP-based web application allows users to browse and book rental cars. It u
 - Add email notifications for bookings.
 - implement all booking history to be available for admin.
 
-## Screenshots
-### using filters to choose from cars
+## Features
+### Using filters to choose from cars
 1. set the price range.
 ![price setting](images/screenshots/price_filter_check.png)
 2. press the filter button.
@@ -105,7 +105,7 @@ This PHP-based web application allows users to browse and book rental cars. It u
 ![Car after editing](images/screenshots/changes_applied.png)
 
 ### Admin Panel: Deleting a Car
-- Choose a car and press delete button.
+- Deleting a car
 ![Cars before](images/screenshots/changes_applied.png)
 ![Cars after](images/screenshots/deletation.png)
 - All changes are visible in user panel(HomePage).
