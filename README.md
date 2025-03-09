@@ -60,7 +60,7 @@ This PHP-based web application allows users to browse and book rental cars. It u
 ![Choosing date](images/screenshots/choose_date.png)
 4. A confirmation page will indicate success or failure (if the car is already booked for that time).
 ![Booking successful](images/screenshots/booking_successful.png)
-
+  Or it could fail if car is already booked for that time
 ![bookinf failed](images/screenshots//booking_failed.png)
 
 ### Admin Panel
