@@ -76,13 +76,13 @@ This PHP-based web application allows users to browse and book rental cars. It u
 - implement all booking history to be available for admin.
 
 ## Screenshots
-# using filters to choose from cars
+### using filters to choose from cars
 1. set the price range.
 ![price setting](images/screenshots/price_filter_check.png)
 2. press the filter button.
 ![price filteration](images/screenshots/after_price_filtration.png)
 
-# Admin Panel: Adding a Car
+### Admin Panel: Adding a Car
 1. After Logging in using the default admin credentials (`admin@ikarrental.hu`, `admin`).
 ![admin Panel](images/screenshots/admin_panel.png)
 2. press add new car buttton.
@@ -95,7 +95,7 @@ This PHP-based web application allows users to browse and book rental cars. It u
 ![Car](images/screenshots/save_new_car.png)
 ![Csr saved](images/screenshots/new_car_added.png) 
 
-# Admin Panel: Editing a Car
+### Admin Panel: Editing a Car
 1. Choose a car and press edit.
 ![Admin Panel](images/screenshots/new_car_added.png.png)
 2. Make Changes(Ex: price).
@@ -104,7 +104,7 @@ This PHP-based web application allows users to browse and book rental cars. It u
 3. Press save and Car details are updated.
 ![Car after editing](images/screenshots/changes_applied.png)
 
-# Admin Panel: Deleting a Car
+### Admin Panel: Deleting a Car
 - Choose a car and press delete button.
 ![Cars before](images/screenshots/changes_applied.png)
 ![Cars after](images/screenshots/deletation.png)
