@@ -61,7 +61,7 @@ if (!$car) {
             <h2><?= htmlspecialchars($car['brand'] . ' ' . $car['model']) ?></h2>
             <img src="<?= htmlspecialchars($car['image']) ?>" alt="<?= htmlspecialchars($car['model']) ?>" style="max-width: 300px;">
             <p>Your booking for this car has been confirmed.</p>
-            <p><a href="index.php">Back to Homepage</a></p>
+            <p><button onclick = "window.location.href = 'index.php'">Back to Home Page</button></p>
         </div>
     <?php else: ?>
         <p>Error loading car details.</p>

@@ -109,5 +109,358 @@
             "end_date": "2025-03-29",
             "id": "67ccd14be0036"
         }
-    }
+    },
+    {
+        "0": {
+            "user_email": "omarsms25@gmail.com",
+            "car_id": 3,
+            "start_date": "2025-03-13",
+            "end_date": "2025-03-20"
+        },
+        "1": {
+            "0": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-13",
+                "end_date": "2025-03-20"
+            },
+            "67cc917bddb9f": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-23",
+                "end_date": "2025-03-31",
+                "id": "67cc917bddb9f"
+            }
+        },
+        "2": {
+            "0": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-13",
+                "end_date": "2025-03-20"
+            },
+            "1": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "67cc917bddb9f": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-23",
+                    "end_date": "2025-03-31",
+                    "id": "67cc917bddb9f"
+                }
+            },
+            "67cc957e2e65e": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 2,
+                "start_date": "2025-04-09",
+                "end_date": "2025-04-30",
+                "id": "67cc957e2e65e"
+            }
+        },
+        "3": {
+            "0": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-13",
+                "end_date": "2025-03-20"
+            },
+            "1": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "67cc917bddb9f": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-23",
+                    "end_date": "2025-03-31",
+                    "id": "67cc917bddb9f"
+                }
+            },
+            "2": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "1": {
+                    "0": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-13",
+                        "end_date": "2025-03-20"
+                    },
+                    "67cc917bddb9f": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-23",
+                        "end_date": "2025-03-31",
+                        "id": "67cc917bddb9f"
+                    }
+                },
+                "67cc957e2e65e": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 2,
+                    "start_date": "2025-04-09",
+                    "end_date": "2025-04-30",
+                    "id": "67cc957e2e65e"
+                }
+            },
+            "67ccd14be0036": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 2,
+                "start_date": "2025-03-21",
+                "end_date": "2025-03-29",
+                "id": "67ccd14be0036"
+            }
+        },
+        "67cd7d50b8f64": {
+            "user_email": "omarsms25@gmail.com",
+            "car_id": 3,
+            "start_date": "2025-06-10",
+            "end_date": "2025-06-30",
+            "id": "67cd7d50b8f64"
+        }
+    },
+    [
+        {
+            "user_email": "omarsms25@gmail.com",
+            "car_id": 3,
+            "start_date": "2025-03-13",
+            "end_date": "2025-03-20"
+        },
+        {
+            "0": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-13",
+                "end_date": "2025-03-20"
+            },
+            "67cc917bddb9f": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-23",
+                "end_date": "2025-03-31",
+                "id": "67cc917bddb9f"
+            }
+        },
+        {
+            "0": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-13",
+                "end_date": "2025-03-20"
+            },
+            "1": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "67cc917bddb9f": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-23",
+                    "end_date": "2025-03-31",
+                    "id": "67cc917bddb9f"
+                }
+            },
+            "67cc957e2e65e": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 2,
+                "start_date": "2025-04-09",
+                "end_date": "2025-04-30",
+                "id": "67cc957e2e65e"
+            }
+        },
+        {
+            "0": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-13",
+                "end_date": "2025-03-20"
+            },
+            "1": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "67cc917bddb9f": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-23",
+                    "end_date": "2025-03-31",
+                    "id": "67cc917bddb9f"
+                }
+            },
+            "2": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "1": {
+                    "0": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-13",
+                        "end_date": "2025-03-20"
+                    },
+                    "67cc917bddb9f": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-23",
+                        "end_date": "2025-03-31",
+                        "id": "67cc917bddb9f"
+                    }
+                },
+                "67cc957e2e65e": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 2,
+                    "start_date": "2025-04-09",
+                    "end_date": "2025-04-30",
+                    "id": "67cc957e2e65e"
+                }
+            },
+            "67ccd14be0036": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 2,
+                "start_date": "2025-03-21",
+                "end_date": "2025-03-29",
+                "id": "67ccd14be0036"
+            }
+        },
+        {
+            "0": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-03-13",
+                "end_date": "2025-03-20"
+            },
+            "1": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "67cc917bddb9f": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-23",
+                    "end_date": "2025-03-31",
+                    "id": "67cc917bddb9f"
+                }
+            },
+            "2": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "1": {
+                    "0": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-13",
+                        "end_date": "2025-03-20"
+                    },
+                    "67cc917bddb9f": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-23",
+                        "end_date": "2025-03-31",
+                        "id": "67cc917bddb9f"
+                    }
+                },
+                "67cc957e2e65e": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 2,
+                    "start_date": "2025-04-09",
+                    "end_date": "2025-04-30",
+                    "id": "67cc957e2e65e"
+                }
+            },
+            "3": {
+                "0": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 3,
+                    "start_date": "2025-03-13",
+                    "end_date": "2025-03-20"
+                },
+                "1": {
+                    "0": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-13",
+                        "end_date": "2025-03-20"
+                    },
+                    "67cc917bddb9f": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-23",
+                        "end_date": "2025-03-31",
+                        "id": "67cc917bddb9f"
+                    }
+                },
+                "2": {
+                    "0": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 3,
+                        "start_date": "2025-03-13",
+                        "end_date": "2025-03-20"
+                    },
+                    "1": {
+                        "0": {
+                            "user_email": "omarsms25@gmail.com",
+                            "car_id": 3,
+                            "start_date": "2025-03-13",
+                            "end_date": "2025-03-20"
+                        },
+                        "67cc917bddb9f": {
+                            "user_email": "omarsms25@gmail.com",
+                            "car_id": 3,
+                            "start_date": "2025-03-23",
+                            "end_date": "2025-03-31",
+                            "id": "67cc917bddb9f"
+                        }
+                    },
+                    "67cc957e2e65e": {
+                        "user_email": "omarsms25@gmail.com",
+                        "car_id": 2,
+                        "start_date": "2025-04-09",
+                        "end_date": "2025-04-30",
+                        "id": "67cc957e2e65e"
+                    }
+                },
+                "67ccd14be0036": {
+                    "user_email": "omarsms25@gmail.com",
+                    "car_id": 2,
+                    "start_date": "2025-03-21",
+                    "end_date": "2025-03-29",
+                    "id": "67ccd14be0036"
+                }
+            },
+            "67cd7d50b8f64": {
+                "user_email": "omarsms25@gmail.com",
+                "car_id": 3,
+                "start_date": "2025-06-10",
+                "end_date": "2025-06-30",
+                "id": "67cd7d50b8f64"
+            }
+        }
+    ]
 ]

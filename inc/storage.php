@@ -52,17 +52,14 @@ class JsonIO extends FileIO {
   }
 
   public function save($data) {
-    $existingData = $this->load(true);
-
-    if (!is_array($existingData)) {
-        $existingData = []; 
+    if (!is_array($data)) {
+        throw new Exception("Data must be an array.");
     }
 
-    $existingData[] = $data; 
-
-    $json_content = json_encode($existingData, JSON_PRETTY_PRINT);
+    $json_content = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents($this->filepath, $json_content);
 }
+
 }
 class SerializeIO extends FileIO {
   public function load() {
@@ -113,6 +110,7 @@ class Storage implements IStorage {
     $this->contents[$id] = $record;
     return $id;
   }
+  
 
   public function findById(string $id) {
     return $this->contents[$id] ?? NULL;
@@ -120,14 +118,15 @@ class Storage implements IStorage {
 
   public function findAll(array $params = []) {
     return array_filter($this->contents, function ($item) use ($params) {
-      foreach ($params as $key => $value) {
-        if (((array)$item)[$key] !== $value) {
-          return FALSE;
+        foreach ($params as $key => $value) {
+            if (!isset($item[$key]) || strval($item[$key]) !== strval($value)) { 
+                return FALSE;
+            }
         }
-      }
-      return TRUE;
+        return TRUE;
     });
-  }
+}
+
 
   public function findOne(array $params = []) {
     $found_items = $this->findAll($params);
@@ -136,8 +135,13 @@ class Storage implements IStorage {
   }
 
   public function update(string $id, $record) {
-    $this->contents[$id] = $record;
-  }
+    foreach ($this->contents as &$item) {
+        if (isset($item['id']) && strval($item['id']) === strval($id)) {
+            $item = $record;
+            break;
+        }
+    }
+}
 
   public function delete(string $id) {
     unset($this->contents[$id]);

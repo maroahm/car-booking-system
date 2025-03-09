@@ -24,7 +24,7 @@ $loggedIn = isset($_SESSION['user']);
                 </form>
             <?php else: ?>
                 <div class="user-icon">
-                    <img src="userIcon.png" alt="userIcon">
+                    <img src="images/userIcon.png" alt="userIcon">
                 </div>
                 <div class="user-options">
                     <button onclick = "window.location.href = 'profile.php'">My Reservations</button>
@@ -38,7 +38,7 @@ $loggedIn = isset($_SESSION['user']);
 
     <div class="booking-failure">
         <p>Sorry, the car is already booked for the selected period or an error occurred.</p>
-        <a href="index.php">Back to Homepage</a>
+        <p><button onclick = "window.location.href = 'index.php'">Back to Home Page</button></p>
     </div>
 </body>
 </html>

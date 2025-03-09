@@ -90,6 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <button type="submit">Add Car</button>
     </form>
-    <a href="index.php">Back to Admin Panel</a>
+    <br>
+    <button onclick="window.location.href = 'index.php'">Back to Home Panel</button>
 </body>
 </html>

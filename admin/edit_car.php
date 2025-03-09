@@ -11,22 +11,13 @@ if (!$carId) {
     die("Car ID is missing.");
 }
 
-$file = new JsonIO('../data/cars.json');
-$cars = $file->load(true);
-
-$carToEdit = null;
-$carIndex = false; 
-foreach ($cars as $index => $c) {
-    if ($c['id'] == $carId) {
-        $carToEdit = $c;
-        $carIndex = $index; 
-        break;
-    }
-}
+$carStorage = new Storage(new JsonIO('../data/cars.json'));
+$carToEdit = $carStorage->findOne(['id' => $carId]);
 
 if (!$carToEdit) {
     die("Car not found.");
 }
+
 
 
 $errors = [];
@@ -57,8 +48,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($errors)) {
-        $cars[$carIndex] = array_merge($_POST, ['id' => intval($carId), 'image' => $imageFilename]);
-        $file->save($cars);
+        $updatedCar = array_merge($carToEdit, $_POST, ['image' => $imageFilename]);
+        $carStorage->update($carId, $updatedCar);
+
         header('Location: index.php');
         exit;
     }
@@ -97,6 +89,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <button type="submit">Save Changes</button>
     </form>
-    <a href="index.php">Back to Admin Panel</a>
+    <br>
+    <button onclick ="window.location.href = 'index.php'">Back to Admin Panel</button>
 </body>
 </html>

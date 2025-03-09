@@ -52,7 +52,7 @@ $cars = $file->load(true);
 <body>
     <h1>Admin Panel</h1>
     <p>Welcome, Admin!</p>
-    <div><a href="add_car.php">Add New Car</a></div>
+    <div><button onclick="window.location.href ='add_car.php'"> Add New Car</button></div>
 
     <h2>Car List</h2>
     <div class="admin-car-list">
